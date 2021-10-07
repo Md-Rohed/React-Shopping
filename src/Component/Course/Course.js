@@ -12,7 +12,7 @@ export default function Course(props) {
         <h1> Name:{name}</h1>
         <h1>Instructor:{instructor}</h1>
         <h1>Price:{price}</h1>
-        <button>Enroll</button>
+        <button onClick={() => props.handleButton(props.course)}>Enroll</button>
       </div>
     </div>
   );
